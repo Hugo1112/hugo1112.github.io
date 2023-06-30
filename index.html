@@ -1,46 +1,70 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" 
-href="index.css">
-<title>My First Page</title>
-</head>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>My First Page</title>
     <script>
-      function changeIframe(url) {
-        var iframe = document.getElementById("my-iframe");
-        iframe.src = url;
-      }
+        function changeIframe(url) {
+            var iframe = document.getElementById("my-iframe");
+            iframe.src = url;
+        }
     </script>
+</head>
+
 <body>
-  <!-- <header id="pageHeader">Header</header> -->
-  <!-- <article>Article</article> -->
-  <!-- <nav>Nav</nav> -->
-  <!-- <footer>Footer</footer> -->
-  <div id="grid-container">
-	<div id="header"><h1>League of Legend Wiki</h1></div>
-	<div id="nav"></div>
-	<div id="article">  
-		<main class="grid">
-			<a href="#" onclick="changeIframe('Aatrox.html')">
-				<img src="Picture/10001.AatroxSquare.png" alt="Sample photo">
-			<a href="#" onclick="changeIframe('Ahri.html')">
-				<img src="Picture/10002.Ahri_OriginalSquare.png" alt="Sample photo">
-			<a href="#" onclick="changeIframe('Akali.html')">
-				<img src="Picture/10003.AkaliSquare.png" alt="Sample photo">
-			<a href="#" onclick="changeIframe('Akshan.html')">
-				<img src="Picture/10004.Akshan_OriginalSquare.png" alt="Sample photo">
-			<a href="#" onclick="changeIframe('Alistar.html')">
-				<img src="Picture/10005.AlistarSquare.png" alt="Sample photo">
-			<a href="#" onclick="changeIframe('Amumu.html')">
-				<img src="Picture/10006.AmumuSquare.png" alt="Sample photo">
-		</main>
-			<iframe id="my-iframe" src="about:blank" width="1000" height="800"></iframe>
-
-	</div>
-	<div id="footer"></div>
-  </div>
-
-
+    <!-- <header id="pageHeader">Header</header> -->
+    <!-- <article>Article</article> -->
+    <!-- <nav>Nav</nav> -->
+    <!-- <footer>Footer</footer> -->
+    <div id="grid-container">
+      <div id="header-container">
+        <div class="header">
+          <div class="icon">
+            <div class="test">
+            <h1>Legue of Legend</h1>
+            </div>
+          </div>
+          <nav>
+              <a href="">HOME</a>
+              <a href="">Play Style </a>
+              <a href="">Champion</a>
+          </nav>  
+      </div>
+      </div>
+        <div id="nav">
+            <main class="grid">
+                <a href="#" onclick="changeIframe('Aatrox.html')"><br>
+                    <img src="Picture/10001.AatroxSquare.png" alt="Sample photo">
+                </a>
+                <a href="#" onclick="changeIframe('Ahri.html')"><br>
+                    <img src="Picture/10002.Ahri_OriginalSquare.png" alt="Sample photo">
+                </a>
+                <a href="#" onclick="changeIframe('Akali.html')"><br>
+                    <img src="Picture/10003.AkaliSquare.png" alt="Sample photo">
+                </a>
+                <a href="#" onclick="changeIframe('Akshan.html')"><br>
+                    <img src="Picture/10004.Akshan_OriginalSquare.png" alt="Sample photo">
+                </a>
+                <a href="#" onclick="changeIframe('Alistar.html')"><br>
+                    <img src="Picture/10005.AlistarSquare.png" alt="Sample photo">
+                </a>
+                <a href="#" onclick="changeIframe('Amumu.html')"><br>
+                    <img src="Picture/10006.AmumuSquare.png" alt="Sample photo">
+                </a>
+            </main>
+        </div>
+        <div id="article">
+          <table border="1">
+            <tr>
+              <td>Base statistics</td>
+              <td>Attack speed</td>
+              <td>Unit radius</td>
+              <td>Special statistics</td>
+            </tr>
+            </table>
+            <iframe id="my-iframe" src="about:blank" width="1000" height="800"></iframe>
+        </div>
+        <div id="footer"></div>
+    </div>
 </body>
-
-
 </html>

@@ -1,0 +1,96 @@
+h1 {
+  color: red;
+  text-align: left;
+  font-size: 15pt
+}
+
+body {
+  background-color: lightgrey;
+  background-image: url(../Picture/bg/index-bg.png);
+  background-size: cover;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav article article"
+    "nav footer footer";
+  grid-template-rows: 80px 1fr 70px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+}
+
+#header-container {
+  grid-area: header;
+}
+#nav {
+  grid-area: nav;
+}
+
+#article {
+  grid-area: article;
+
+}
+
+#footer {
+  grid-area: footer;
+}
+
+.icon{
+  margin:0 auto;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+.test{
+  padding: 5px;
+}
+h1 {
+  font-family: verdana;
+  color: blueviolet;
+  font-size: 20px;
+  text-align: center;
+}
+/*kitty*/
+
+.header nav a {
+  display: inline-block;
+  color: rgb(81, 77, 195);
+  font-size: 24px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.header {
+
+  display: flex;
+  background: rgba(0, 0, 0, 0.9);
+
+}
+
+.header a {
+
+  text-decoration: none;
+}
+
+
+.header nav {
+
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: flex-end;
+
+}
+
+.header nav a:hover {
+
+  text-decoration: underline;
+  text-underline-offset: 5px;
+
+}
