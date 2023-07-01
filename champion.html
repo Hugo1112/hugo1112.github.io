@@ -4,19 +4,6 @@
     <link rel="icon" type="image/x-icon" href="picture/10166.10_Year_Anniversary_Poro_profileicon.png">
     <title>Champion Details</title>
     <script>
-        window.onscroll = function () { sticky() };
-
-        var navbar = document.getElementById("nav");
-        var sticky = navbar.offsetTop;
-
-        function sticky() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-
         function changeIframe(url) {
             var iframe = document.getElementById("my-iframe");
             iframe.src = url;
@@ -32,17 +19,16 @@
     <div id="grid-container">
       <div id="header-container">
         <div class="header">
-          <div class="icon">
-            <div class="test">
-                <img src="picture/Udyr/10008.Udyr_OriginalC.png" alt="Sample photo" width="50px">
-                <h1>League of Legends Fans Club</h1>
-            </div>
+            <div class="hero">
+                <img src="picture/Udyr/10008.Udyr_OriginalC.png" alt="Sample photo" width="50px" class="inline-block">
+                <h1 class="inline-block">League of Legends Fans Club</h1>
           </div>
           <nav>
               <a href="index.html">Home</a>
               <a href="story.html">Story</a>
               <a href="champion.html">Champion Status</a>
               <a href="form.html">Form</a>
+              <a href="souvenirs.html">Souvenirs</a>
           </nav>  
       </div>
       </div>

@@ -39,10 +39,17 @@ body {
 #header-container {
   grid-area: header;
 }
+
 #nav {
   grid-area: nav;
-  overflow: hidden;
-  /* position: sticky; */
+  width: 250px;
+  height: 250px;
+  background: #ddd;
+  display: inline-block;
+  float: left;
+  position: sticky;
+  top: 50px;
+
   /* position: fixed; */
 }
 
@@ -55,14 +62,16 @@ body {
   grid-area: footer;
 }
 
-.icon{
+.inline-block {
+  display: inline-block;
+}
+
+.hero{
+  padding: 0px;
   margin:0 auto;
-  width: 500px;
+  width: 1000px;
   justify-content: space-between;
   align-items: center;
-}
-.test{
-  padding: 5px;
 }
 
 h1 {
@@ -72,12 +81,13 @@ h1 {
   text-align: center;
 }
 
-div{
+div {
   display: block;
 }
 /*kitty*/
 
 .header nav a {
+  font-family: sans-serif;
   display: inline-block;
   color: rgb(81, 77, 195);
   font-size: 24px;
