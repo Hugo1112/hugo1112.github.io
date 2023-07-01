@@ -41,7 +41,8 @@ body {
 }
 #nav {
   grid-area: nav;
-  position: sticky;
+  overflow: hidden;
+  /* position: sticky; */
   /* position: fixed; */
 }
 
@@ -63,6 +64,7 @@ body {
 .test{
   padding: 5px;
 }
+
 h1 {
   font-family: verdana;
   color: blueviolet;
@@ -70,6 +72,9 @@ h1 {
   text-align: center;
 }
 
+div{
+  display: block;
+}
 /*kitty*/
 
 .header nav a {
@@ -184,6 +189,19 @@ li {
 nav li a {
     color: #76a33c;
     text-decoration: none;
+}
+/* sticky */
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
 /* article */

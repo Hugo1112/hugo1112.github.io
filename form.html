@@ -34,7 +34,68 @@
                 </div>
             </div>
             <div id="article">
-
+                <form>
+                    <label for="name">Username:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">EmailAddres:</label>
+                    <input type="email" id="email" name="email" pattern="^[A-Za-z0-9@.]*" required="required"/><br><br>
+            
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="secret" name="gender" value="secret" checked="checked">
+                    <label for="secret">Secret</label><br><br>
+            
+                    <label>Server:</label>
+                    <input type="checkbox" id="tw" name="server" value="tw">
+                    <label for="tw">TW</label>
+                    <input type="checkbox" id="jp" name="server" value="jp">
+                    <label for="jp">JP</label>
+                    <input type="checkbox" id="cn" name="server" value="cn">
+                    <label for="cn">CN</label><br><br>
+            
+                    <label for="city">City:</label>
+                    <select id="city" name="city">
+                        <optgroup label="Usual">
+                            <option value="hongkong">HongKong</option>
+                            <option value="china">China</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option value="japan">Japan</option>
+                            <option value="taiwan">Taiwan</option>
+                            <option value="other">Other</option>
+                        </optgroup>
+                    </select><br><br>
+            
+                    <fieldset>
+                        <legend>Favourite Lane:</legend>
+                        <input type="checkbox" id="top" name="lane" value="top">
+                        <label for="top">Top</label><br>
+                        <input type="checkbox" id="mid" name="lane" value="mid">
+                        <label for="mid">Middle</label><br>
+                        <input type="checkbox" id="adc" name="lane" value="adc">
+                        <label for="adc">Bottom</label><br>
+                        <input type="checkbox" id="sup" name="lane" value="sup">
+                        <label for="sup">Support</label><br>
+                        <input type="checkbox" id="jg" name="lane" value="jg">
+                        <label for="jg">Jungle</label>
+            
+                    </fieldset><br>
+            
+                    <fieldset>
+                        <legend>Any FeedBack:</legend>
+                        <textarea rows="9" input type="text" cols="40" id="fb" name="fb" >For example, your favourite Champion or playing style...</textarea>
+                    </fieldset><br>
+            
+                    <label for="LD">Played Year:</label>
+                    <input type="number" id="LD" name="LD" min="1" max="13" pattern="^[0-9]{2}$" required="required"/>(Now is S13)<br><br>
+                    <label for="birthdate">Date Of Joining:</label>
+                    <input type="date" id="birthdate" name="birthdate"><br><br>
+            
+                    <input type="submit" value="Submit">
+                </form>
             </div>
             <div id="footer"></div>
         </div>>
