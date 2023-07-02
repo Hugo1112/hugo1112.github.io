@@ -238,3 +238,22 @@ nav li a {
 
 /* article */
 
+@media only screen and (max-width: 1200px) {
+    #articles-nav-container {
+        display: none;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #article {
+
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .inline-block {
+        display: none;
+    }
+}
