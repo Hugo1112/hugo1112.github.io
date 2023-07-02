@@ -45,7 +45,7 @@ body {
 }
 
 body.index-page {
-  background-image: url(../Picture/bg/Freljord_Fortress.webp);
+  background-image: url(../Picture/bg/freljord.jpg);
 }
 
 #grid-container {
@@ -53,7 +53,7 @@ body.index-page {
     grid-template-areas:
         "header header header"
         "nav article article"
-        "nav footer footer";
+        "footer footer footer";
     grid-template-rows: 80px 1fr 70px;
     grid-template-columns: 20% 1fr 15%;
     grid-row-gap: 10px;
@@ -109,6 +109,19 @@ body.index-page {
 
 #footer {
   grid-area: footer;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding: 20px 0;
+}
+
+#footer span {
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
 }
 
 .inline-block {
