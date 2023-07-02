@@ -68,10 +68,10 @@ body {
   color: #333;
 }
 
-body.index-page {
+.index-page {
   background-image: url(../Picture/bg/freljord.jpg);
 }
-body.story-page {
+.story-page {
   background-image: url(../Picture/bg/udyr-freljordf.jpg);
 }
 #grid-container {
