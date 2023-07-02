@@ -4,14 +4,34 @@ h1 {
   font-size: 15pt
 }
 
+h3 {
+    text-shadow: 2px 2px 4px rgb(81, 77, 195);
+    font-size: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    color: #c9cf7d;
+}
+
+h4 {
+    text-shadow: 2px 2px 4px rgb(81, 77, 195);
+    font-size: 20px;
+    color: #c9cf7d;
+}
+
+h5 {
+    text-shadow: 2px 2px 4px rgb(81, 77, 195);
+    font-size: 20px;
+    color: #c9cf7d;
+}
 #article h2 {
-  color: #ffffff;
-  border-bottom: 1px solid var(--theme-border-color);
-  font-size: 30px;
-  font-weight: 500;
-  overflow: auto;
-  padding: 6px 0;
-  margin: 18px 0 9px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+    border-bottom: 1px solid var(--theme-border-color);
+    font-size: 30px;
+    font-weight: 500;
+    overflow: auto;
+    padding: 6px 0;
+    margin: 18px 0 9px;
 }
 
 body {
