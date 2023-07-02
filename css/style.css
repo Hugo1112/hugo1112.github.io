@@ -40,6 +40,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: center center;
   font-size: 20px;
   color: #333;
 }
@@ -47,7 +48,9 @@ body {
 body.index-page {
   background-image: url(../Picture/bg/freljord.jpg);
 }
-
+body.story-page {
+  background-image: url(../Picture/bg/udyr-freljordf.jpg);
+}
 #grid-container {
     display: grid;
     grid-template-areas:
@@ -233,43 +236,55 @@ caption {
 /*side nav */
 
 #articles-nav-container {
-    float: left;
-    font-size: .8em;
-    /* width: 130px; */
-    width: 100%;
+  float: left;
+  font-size: .8em;
+  /* width: 130px; */
+  width: 100%;
 }
+
 #articles-nav {
     border-right: 1px solid #eee;
     padding-right: 15px;
     width: 100%;
 }
+
 #articles-nav-container #articles-nav nav {
-    display: block;
+  display: block;
 }
+
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
+
 nav li {
-    text-overflow: ellipsis;
-    overflow: hidden; /* hidden point*/
-    white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* hidden point*/
+  white-space: nowrap;
 }
+
 li {
-    display: list-item;
-    text-align: -webkit-match-parent;
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
+
+li.head {
+  font-size: 20px;
+  color: aqua;
+}
+
 nav li a {
-    color: #76a33c;
-    text-decoration: none;
+  color: #76a33c;
+  text-decoration: none;
 }
 
 /* article */
