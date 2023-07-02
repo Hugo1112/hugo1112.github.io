@@ -4,6 +4,17 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
         <link rel="icon" type="image/x-icon" href="picture/10166.10_Year_Anniversary_Poro_profileicon.png">
         <title>Souvenirs</title>
+        <script>
+            function showValue(value) {
+              alert("You got a "+value+".");
+              window.location.href = "index.html";
+            }
+            </script>
+        <style>
+            #article {
+                padding: 0%;
+            }
+        </style>
     </head>
     <body>
         <div id="grid-container"  class="hide-nav-grid">
@@ -20,12 +31,58 @@
                     <a href="story.html">Story</a>
                     <a href="champion.html">Champion's Status</a>
                     <a href="form.html">Form</a>
-                    <a href="souvenirs.html">Souvenirs</a>
                 </nav>  
             </div>
             </div>
-            <div id="article">
-                <p>test</p>
+            <div id="article" style="padding-top: 30px;">
+                <div class="container-bottom">
+                <h1 style="font-size: 50px;">Thank You!</h1>
+                <p class=form-output>Here is the data you submitted:</p>
+                <ul id="form-data"></ul>
+                <script>
+                    // Retrieve the form data from localStorage and display it
+                    var formDataJson = localStorage.getItem("formData");
+                    if (formDataJson) {
+                      var formData = JSON.parse(formDataJson);
+              
+                      var formDataHtml = "";
+                      formDataHtml += "<li class=form-output>Name: " + formData.name + "</li>";
+                      formDataHtml += "<li class=form-output>Email: " + formData.email + "</li>";
+                      formDataHtml += "<li class=form-output>Gender: " + formData.gender + "</li>";
+                      formDataHtml += "<li class=form-output>Server: " + formData.server + "</li>";
+                      formDataHtml += "<li class=form-output>City: " + formData.city + "</li>";
+                      formDataHtml += "<li class=form-output>Lane: " + formData.lane + "</li>";
+                      formDataHtml += "<li class=form-output>PlayYear: " + formData.year + "</li>";
+                      formDataHtml += "<li class=form-output>DateOfJoin: " + formData.date + "</li>";
+                      formDataHtml += "<li class=form-output>Message: " + formData.message + "</li>";
+
+                      var formDataElement = document.getElementById("form-data");
+                      formDataElement.innerHTML = formDataHtml;
+                    }
+                </script>
+                </div>
+                <main>
+                    <div class="card">
+                      <img src="picture/10167.Thumbs_Up_Emote.png" alt="Sample Image" width="500px"/>
+                      <h2 style="text-align: center;">"Thumbs Up"</h2>
+                      <p>The Thumbs Up Emoji In League of Legends</p>
+                      <button type="button" class="buy-button" value="ThumbsUp" onclick="showValue(this.value)">Select</button>
+                    </div>
+                
+                    <div class="card">
+                      <img src="picture/poro.png" alt="Sample Image" width="500px"/>
+                      <h2 style="text-align: center;">"A Poro"</h2>
+                      <p>the fluffy creature with a round body and short legs</p>
+                      <button type="button" class="buy-button" value="Poro" onclick="showValue(this.value)">Select</button>
+                    </div>
+                
+                    <div class="card">
+                      <img src="picture/10174.Hextech_Crafting_Masterwork_Chest.png" alt="Sample Image" width="500px"/>
+                      <h2 style="text-align: center;">"A Hextech Chest & Key"</h2>
+                      <p>used to unlock cosmetic items such as champion skins</p>
+                      <button type="button" class="buy-button" value="HextechStuff" onclick="showValue(this.value)">Select</button>
+                    </div>
+                  </main>
             </div>
             <div id="footer">
                 <h6>ABOUT US</h6>
@@ -36,6 +93,6 @@
                     GSD 1A IVE TY Campus
                 </span>
             </div>
-        </div>>
+        </div>
     </body>
 </html>
