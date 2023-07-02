@@ -45,17 +45,17 @@ body {
 }
 
 #grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "nav article article"
-    "nav footer footer";
-  grid-template-rows: 80px 1fr 70px;
-  grid-template-columns: 20% 1fr 15%;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  height: 100vh;
-  margin: 0;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav article article"
+        "nav footer footer";
+    grid-template-rows: 80px 1fr 70px;
+    grid-template-columns: 20% 1fr 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
 }
 
 #header-container {
@@ -247,7 +247,8 @@ nav li a {
         display: none;
     }
 
-    #article {
+    #grid-container {
+        display:initial;
 
     }
 }
