@@ -21,6 +21,7 @@ h5 {
     font-size: 20px;
     color: #c9cf7d;
 }
+
 #article h2 {
     color: #ffffff;
     text-shadow: 2px 2px 4px #000000;
@@ -31,7 +32,9 @@ h5 {
     padding: 6px 0;
     margin: 18px 0 9px;
 }
-
+#article .my-flex-container .my-div-block h2{
+  text-align: center;
+}
 body {
   background-color: lightgrey;
   background-image: url(../Picture/bg/index-bg.png);
@@ -301,8 +304,8 @@ nav li a {
 }
 
 .my-div-block {
-  background-color: rgba(0, 0, 0, 0.8);
-  background-color: #f0f0f0;
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.418);
   padding: 20px;
   border: 1px solid #ccc;
 }
