@@ -92,6 +92,7 @@ body.story-page {
 
 #article {
   grid-area: article;
+  padding-left: 5%;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -267,6 +268,10 @@ nav li a {
 
 /* article */
 
+#article-width{
+  width: 80%;
+  display: inline-block;
+}
 .column-split{
   column-count: 2;
   column-gap: 20px;
@@ -336,10 +341,16 @@ nav li a {
         display:initial;
 
     }
+    .column-split{
+      column-count: 1;
+    }
 }
 
 @media only screen and (max-width: 950px) {
     .inline-block {
         display: none;
+    }
+    .column-split{
+      column-count: 1;
     }
 }

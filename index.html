@@ -4,10 +4,24 @@
         <link rel="icon" type="image/x-icon" href="picture/10166.10_Year_Anniversary_Poro_profileicon.png">
         <title>League of Legends Fans Club</title>
         <script>
-            setTimeout(function () {
-                document.getElementById("img").style.display = "none";
-                document.querySelector(".video-wrapper").style.display = "block";
-            }, 3000);
+            window.onload = function () {
+                    const image = document.querySelector('#img');
+                    image.style.opacity = 1;
+
+                    setTimeout(() => {
+                        let opacity = 1;
+                        const interval = setInterval(() => {
+                            if (opacity > 0) {
+                                opacity -= 0.01;
+                                image.style.opacity = opacity;
+                            } else {
+                                clearInterval(interval);
+                                image.style.display = 'none';
+                            }
+                        }, 30);
+                        document.querySelector(".video-wrapper").style.display = "block";
+                    }, 3000);
+                };
         </script>
     </head>
     <body class="index-page">
