@@ -44,6 +44,10 @@ body {
   color: #333;
 }
 
+body.index-page {
+  background-image: url(../Picture/bg/Freljord_Fortress.webp);
+}
+
 #grid-container {
     display: grid;
     grid-template-areas:
